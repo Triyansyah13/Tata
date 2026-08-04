@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- LOADING SCREEN -->
+    <!-- ========================= -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-heart">
+                ❤
+            </div>
+
+            <h2>Preparing Your Birthday Gift...</h2>
+
+            <div class="loading-bar">
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Floating Hearts -->
+
+    <div id="hearts-container"></div>
+
+    <!-- Confetti -->
+
+    <canvas id="confetti"></canvas>
+
+    <!-- Music -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="dropdead.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <h3>Happy Birthday</h3>
+
+            <h1>Yosi ❤️</h1>
+
+            <p>
+                Hari ini bukan hanya tentang bertambahnya usia,
+                tapi tentang seseorang yang membuat duniaku
+                menjadi jauh lebih indah setiap harinya.
+            </p>
+
+            <button id="openGift">
+
+                Open My Gift 🎁
+
+            </button>
+
+        </div>
+
+        <div class="hero-glass">
+
+            <img src="assets/img4.png" alt="Birthday">
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- WELCOME -->
+    <!-- ========================= -->
+
+    <section class="welcome">
+
+        <div class="glass-card">
+
+            <h2>Hi Cantik ✨</h2>
+
+            <p>
+
+                Selamat datang di hadiah kecil yang aku buat khusus
+                buat orang paling spesial di hidupku.
+
+                Aku tahu ini nggak bisa menggantikan pelukan,
+                tapi semoga bisa bikin kamu tersenyum.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ENVELOPE -->
+    <!-- ========================= -->
+
+    <section class="envelope-section">
+
+        <h2 class="section-title">
+
+            Ada Surat Buat Kamu 💌
+
+        </h2>
+
+        <div class="envelope-wrapper">
+
+            <div class="envelope" id="envelope">
+
+                <div class="top-flap"></div>
+
+                <div class="letter">
+
+                    <button id="readLetter">
+
+                        Buka Surat
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- LETTER -->
+    <!-- ========================= -->
+
+    <section id="letterSection">
+
+        <div class="letter-card">
+
+            <h2>Untuk Kamu ❤️</h2>
+
+            <p id="typewriter"></p>
+
+        </div>
+
+    </section>
+        <!-- ========================= -->
+    <!-- GALLERY -->
+    <!-- ========================= -->
+
+    <section class="gallery-section" id="gallery">
+
+        <h2 class="section-title">
+            Our Beautiful Memories 📸
+        </h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="img1.jpeg" alt="Memory 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="img2.jpeg" alt="Memory 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="img3.jpeg" alt="Memory 3">
+            </div>
+
+            <div class="gallery-item">
+                <img src="img4.png" alt="Memory 4">
+            </div>
+
+            <div class="gallery-item">
+                <img src="img5.png" alt="Memory 5">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- LIGHTBOX -->
+    <!-- ========================= -->
+
+    <div id="lightbox">
+
+        <span id="closeLightbox">&times;</span>
+
+        <img id="lightboxImage" src="" alt="Preview">
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- TIMELINE -->
+    <!-- ========================= -->
+
+    <section class="timeline-section">
+
+        <h2 class="section-title">
+            Our Journey ❤️
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>First Meet</h3>
+                    <p>
+                        Hari dimana semuanya dimulai.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>First Laugh</h3>
+                    <p>
+                        Ketawa bareng sampai lupa waktu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Long Distance</h3>
+                    <p>
+                        Walaupun jauh,
+                        hati kita tetap saling memilih.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Today</h3>
+                    <p>
+                        Selamat ulang tahun,
+                        semoga kita selalu bersama.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- LOVE SECTION -->
+    <!-- ========================= -->
+
+    <section class="love-section">
+
+        <div class="love-card">
+
+            <h2>I Love You ❤️</h2>
+
+            <p>
+
+                Terima kasih sudah hadir
+                dan menjadi alasan aku selalu semangat.
+
+                Semoga semua doa baik
+                datang menghampiri kamu.
+
+                Aku bangga punya kamu.
+
+            </p>
+
+            <button id="loveButton">
+
+                Forever ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <h2>Made With ❤️</h2>
+
+        <p>
+            Happy Birthday My Beautiful Girl ✨
+        </p>
+
+        <small>
+            © 2026 • Specially Made For You
+        </small>
+
+    </footer>
+
+    <!-- ========================= -->
+    <!-- SCRIPT -->
+    <!-- ========================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
