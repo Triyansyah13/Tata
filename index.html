@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#ff5ea8">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+<div class="loader-content">
+
+<div class="loader-heart">
+
+❤
+
+</div>
+
+<h2>
+
+Preparing Something Special...
+
+</h2>
+
+<div class="loader-bar">
+
+<span></span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- EFFECT -->
+
+<div id="hearts"></div>
+
+<canvas id="confetti"></canvas>
+
+<div id="cursorGlow"></div>
+
+<!-- MUSIC -->
+
+<audio id="bgMusic" loop>
+
+<source src="dropdead.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-left">
+
+<span class="hero-badge">
+
+Happy Birthday 🎂
+
+</span>
+
+<h1>
+
+Yosi
+
+<span>❤️</span>
+
+</h1>
+
+<p>
+
+Hari ini bukan cuma tentang bertambahnya usia.
+
+Hari ini tentang seseorang yang selalu berhasil
+
+membuat dunia aku terasa jauh lebih indah.
+
+</p>
+
+<button id="openGift">
+
+Open My Gift 🎁
+
+</button>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hero-photo">
+
+<img src="img4.png" alt="Birthday">
+
+</div>
+
+</div>
+
+</header>
+
+<!-- SCROLL -->
+
+<div class="scroll-down">
+
+<span></span>
+
+</div>
+
+<!-- WELCOME -->
+
+<section class="welcome">
+
+<div class="glass-card">
+
+<h2>
+
+Hi Cantik ✨
+
+</h2>
+
+<p>
+
+Website ini aku buat khusus buat kamu.
+
+Semoga setiap bagian kecil di sini
+
+bisa bikin kamu tersenyum.
+
+Walaupun kita lagi LDR,
+
+semoga hadiah sederhana ini
+
+bisa bikin kamu ngerasa aku selalu ada.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- GIFT -->
+
+<section class="gift-section">
+
+<h2 class="section-title">
+
+Birthday Gift 🎁
+
+</h2>
+
+<div class="gift-box" id="giftBox">
+
+<div class="gift-top"></div>
+
+<div class="gift-body"></div>
+
+<div class="gift-ribbon"></div>
+
+</div>
+
+<p class="gift-text">
+
+Klik kotaknya yaa ❤️
+
+</p>
+
+</section>
+
+<!-- ENVELOPE -->
+
+<section class="envelope-section">
+
+<h2 class="section-title">
+
+Ada Surat Buat Kamu 💌
+
+</h2>
+
+<div class="envelope-wrapper">
+
+<div class="envelope" id="envelope">
+
+<div class="flap"></div>
+
+<div class="letter">
+
+<button id="readLetter">
+
+Buka Surat
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="letterSection">
+
+<div class="letter-card">
+
+<h2>
+
+Dear Yosi ❤️
+
+</h2>
+
+<p id="typewriter"></p>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- GALLERY -->
+<!-- ========================= -->
+
+<section class="gallery-section" id="gallery">
+
+    <h2 class="section-title">
+
+        Our Beautiful Memories 📸
+
+    </h2>
+
+    <p class="section-desc">
+
+        Semua foto ini adalah cerita.
+        Dan semua cerita terbaikku selalu ada kamu.
+
+    </p>
+
+    <div class="gallery">
+
+        <div class="photo">
+            <img src="img1.jpeg" alt="Photo 1">
+            <div class="photo-overlay">
+                <span>❤️ Memory #1</span>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="img2.jpeg" alt="Photo 2">
+            <div class="photo-overlay">
+                <span>❤️ Memory #2</span>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="img3.jpeg" alt="Photo 3">
+            <div class="photo-overlay">
+                <span>❤️ Memory #3</span>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="img4.png" alt="Photo 4">
+            <div class="photo-overlay">
+                <span>❤️ Memory #4</span>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="img5.png" alt="Photo 5">
+            <div class="photo-overlay">
+                <span>❤️ Memory #5</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LIGHTBOX -->
+<!-- ========================= -->
+
+<div id="lightbox">
+
+    <span id="closeLightbox">&times;</span>
+
+    <img id="lightboxImg" src="" alt="Preview">
+
+</div>
+
+<!-- ========================= -->
+<!-- LOVE COUNTER -->
+<!-- ========================= -->
+
+<section class="counter-section">
+
+    <div class="counter-card">
+
+        <h2>
+
+            We've Been Together ❤️
+
+        </h2>
+
+        <div class="counter-wrapper">
+
+            <div class="counter-box">
+                <h3 id="dayCount">000</h3>
+                <span>Days</span>
+            </div>
+
+            <div class="counter-box">
+                <h3 id="hourCount">00</h3>
+                <span>Hours</span>
+            </div>
+
+            <div class="counter-box">
+                <h3 id="minuteCount">00</h3>
+                <span>Minutes</span>
+            </div>
+
+            <div class="counter-box">
+                <h3 id="secondCount">00</h3>
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TIMELINE -->
+<!-- ========================= -->
+
+<section class="timeline-section">
+
+    <h2 class="section-title">
+
+        Our Story ❤️
+
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    🌸 First Meet
+
+                </h3>
+
+                <p>
+
+                    Hari dimana aku mulai mengenal
+                    seseorang yang sekarang
+                    menjadi alasan bahagiaku.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    ☕ First Chat
+
+                </h3>
+
+                <p>
+
+                    Obrolan sederhana yang ternyata
+                    menjadi awal dari semuanya.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    ❤️ Fall In Love
+
+                </h3>
+
+                <p>
+
+                    Perlahan kita saling melengkapi.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    ✈️ Long Distance
+
+                </h3>
+
+                <p>
+
+                    Walaupun dipisahkan jarak,
+                    hati kita tetap memilih
+                    untuk saling bertahan.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    ♾ Forever
+
+                </h3>
+
+                <p>
+
+                    Dan semoga cerita kita
+                    tidak pernah selesai.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ========================= -->
+<!-- LOVE QUOTES -->
+<!-- ========================= -->
+
+<section class="quotes-section">
+
+    <h2 class="section-title">
+
+        Little Things I Want To Say ❤️
+
+    </h2>
+
+    <div class="quotes-slider">
+
+        <div class="quote active">
+
+            "Terima kasih sudah hadir dan membuat hidupku jauh lebih berwarna."
+
+        </div>
+
+        <div class="quote">
+
+            "Kalau waktu bisa diulang, aku tetap akan memilih bertemu dengan kamu."
+
+        </div>
+
+        <div class="quote">
+
+            "Jarak hanya memisahkan tempat, bukan hati."
+
+        </div>
+
+        <div class="quote">
+
+            "Semoga setiap ulang tahunmu selalu bisa aku rayakan bersamamu."
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LOVE SECTION -->
+<!-- ========================= -->
+
+<section class="love-section">
+
+    <div class="love-card">
+
+        <h2>
+
+            I Love You ❤️
+
+        </h2>
+
+        <p>
+
+            Aku mungkin belum bisa memberikan hadiah yang paling mahal.
+
+            Tapi aku ingin memberikan sesuatu yang dibuat dengan waktu,
+            usaha, dan seluruh rasa sayangku.
+
+            Semoga website kecil ini selalu mengingatkan kalau
+            kamu adalah orang yang sangat berarti buat aku.
+
+        </p>
+
+        <button id="foreverBtn">
+
+            Forever With You ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MUSIC BUTTON -->
+<!-- ========================= -->
+
+<div id="musicControl">
+
+    <button id="musicBtn">
+
+        🎵
+
+    </button>
+
+</div>
+
+<!-- ========================= -->
+<!-- BACK TO TOP -->
+<!-- ========================= -->
+
+<button id="backTop">
+
+    ↑
+
+</button>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>
+
+            Happy Birthday My Love ❤️
+
+        </h2>
+
+        <p>
+
+            Semoga semua impianmu satu per satu tercapai.
+
+            Semoga kamu selalu sehat.
+
+            Semoga senyummu tidak pernah hilang.
+
+            Dan semoga aku selalu menjadi bagian dari cerita hidupmu.
+
+        </p>
+
+        <div class="footer-heart">
+
+            ❤
+
+        </div>
+
+        <small>
+
+            Made with ❤️ especially for Yosi
+
+        </small>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
